@@ -1,0 +1,25 @@
+[package]
+name = "antourage"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "antourage"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.21.0"
+anchor-spl = "0.21.0"
+metaplex-token-metadata = { git = "https://github.com/metaplex-foundation/metaplex", rev = "8a69c0d01708b9bbd9cf34fd11bd57669773083d", features = [
+    "no-entrypoint",
+] }
+spl-token = "3.3.0"
+arrayref = "0.3.6"

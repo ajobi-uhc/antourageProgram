@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.localnet]
+antourage = "HkTeUJjPM18CGdUXBEDJusi9Wfnk2AwC5AD7PwVheQCe"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/aryajakkli/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
